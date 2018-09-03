@@ -1,4 +1,4 @@
-package engineer.filip.logic;
+package engineer.filip.data;
 
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;
