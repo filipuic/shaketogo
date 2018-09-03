@@ -7,7 +7,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0-beta02'
+        classpath 'com.android.tools.build:gradle:3.3.0-alpha08'
         
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -24,4 +24,26 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext {
+    minSdkVersion = 19
+    targetSdkVersion = 28
+    compileSdkVersion = 28
+    supportLibraryVersion = '28.0.2'
+    supportLibraryCompatibleVersion = '27.0.2'
+    gsonVersion = '2.8.2'
+    archVersion = '1.1.1'
+    rx2FastAndroidNetworkingVersion = '1.0.1'
+
+    daggerVersion = '2.14.1'
+    rxjavaVersion = '2.1.9'
+    rxandroidVersion = '2.1.0'
+    timberVersion = '4.5.1'
+    lifecycleArchVersion = '1.1.1'
+
+    junitVersion = '4.12'
+    espressoVersion = '3.0.1'
+    mockitoVersion = '2.15.0'
+
 }
