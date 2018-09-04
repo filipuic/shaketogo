@@ -4,7 +4,9 @@ package engineer.filip.data.model.db;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+import lombok.Data;
 
+@Data
 @Entity(tableName = "users")
 public class User {
 

@@ -5,7 +5,9 @@ import android.content.SharedPreferences;
 import engineer.filip.di.PrefsInfo;
 import engineer.filip.utils.C;
 import javax.inject.Inject;
+import javax.inject.Singleton;
 
+@Singleton
 public class PrefsHelperImpl implements PrefsHelper {
 
   private static final String PREF_KEY_CURRENT_USER_ID = "PREF_KEY_CURRENT_USER_ID";

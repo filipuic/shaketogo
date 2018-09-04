@@ -5,7 +5,9 @@ import io.reactivex.Observable;
 import java.util.List;
 import java.util.concurrent.Callable;
 import javax.inject.Inject;
+import javax.inject.Singleton;
 
+@Singleton
 public class DbHelperImpl implements DbHelper {
 
   private final AppDatabase appDatabase;
