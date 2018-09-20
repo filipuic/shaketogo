@@ -8,10 +8,10 @@ import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import dagger.android.AndroidInjection;
 
-public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseViewModel, N extends BaseNavigator> extends
+public abstract class BaseActivity<B extends ViewDataBinding, V extends BaseViewModel, N extends BaseNavigator> extends
     AppCompatActivity {
 
-  private T viewDataBinding;
+  private B viewDataBinding;
   private V viewModel;
 
   @Override
@@ -33,7 +33,7 @@ public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseView
 
   public abstract N getNavigator();
 
-  public T getViewDataBinding() {
+  public B getViewDataBinding() {
     return viewDataBinding;
   }
 
