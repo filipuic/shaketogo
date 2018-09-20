@@ -23,8 +23,11 @@ android {
     }
 
     dataBinding {
-        enabled  = true
+        enabled = true
     }
+    dynamicFeatures = [":feature_home"]
+
+
 }
 
 dependencies {
@@ -49,4 +52,3 @@ configurations.all {
     resolutionStrategy {
     }
 }
-

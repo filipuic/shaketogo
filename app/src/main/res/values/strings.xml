@@ -1,3 +1,4 @@
 <resources>
   <string name="app_name">ShakeToGo</string>
+  <string name="title_feature_home">Home</string>
 </resources>

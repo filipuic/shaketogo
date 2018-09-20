@@ -9,13 +9,13 @@
   <data>
     <variable
       name="viewModel"
-      type="engineer.filip.shaketogo.ui.home.HomeViewModel"/>
+      type="engineer.filip.shaketogo.ui.home.MainViewModel"/>
   </data>
 
   <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeActivity">
+    tools:context=".ui.home.MainActivity">
 
     <TextView
       android:layout_width="wrap_content"

@@ -4,9 +4,9 @@ import engineer.filip.data.DataManager;
 import engineer.filip.shaketogo.base.BaseViewModel;
 import engineer.filip.utils.rx.SchedulerProvider;
 
-public class HomeViewModel extends BaseViewModel<HomeNavigator> {
+public class MainViewModel extends BaseViewModel<MainNavigator> {
 
-  public HomeViewModel(DataManager dataManager,
+  public MainViewModel(DataManager dataManager,
       SchedulerProvider schedulerProvider) {
     super(dataManager, schedulerProvider);
   }

@@ -8,15 +8,16 @@ import androidx.lifecycle.ViewModelProviders;
 import engineer.filip.shaketogo.R;
 import engineer.filip.shaketogo.BR;
 import engineer.filip.shaketogo.base.BaseActivity;
-import engineer.filip.shaketogo.databinding.HomeActivityBinding;
+import engineer.filip.shaketogo.databinding.MainActivityBinding;
 import javax.inject.Inject;
 
-public class HomeActivity extends BaseActivity<HomeActivityBinding, HomeViewModel, HomeNavigator> implements
-    HomeNavigator {
+public class MainActivity extends
+    BaseActivity<MainActivityBinding, MainViewModel, MainNavigator> implements
+    MainNavigator {
 
   @Inject
   ViewModelProvider.Factory viewModelFactory;
-  private HomeViewModel homeViewModel;
+  private MainViewModel mainViewModel;
 
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,19 +32,19 @@ public class HomeActivity extends BaseActivity<HomeActivityBinding, HomeViewMode
 
   @Override
   public int getLayoutId() {
-    return R.layout.home_activity;
+    return R.layout.main_activity;
   }
 
   @Override
-  public HomeViewModel getViewModel() {
-    if (homeViewModel == null) {
-      homeViewModel = ViewModelProviders.of(this, viewModelFactory).get(HomeViewModel.class);
+  public MainViewModel getViewModel() {
+    if (mainViewModel == null) {
+      mainViewModel = ViewModelProviders.of(this, viewModelFactory).get(MainViewModel.class);
     }
-    return homeViewModel;
+    return mainViewModel;
   }
 
   @Override
-  public HomeNavigator getNavigator() {
+  public MainNavigator getNavigator() {
     return this;
   }
 

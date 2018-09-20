@@ -9,16 +9,16 @@ import engineer.filip.shaketogo.utils.ViewModelProviderFactory;
 import engineer.filip.utils.rx.SchedulerProvider;
 
 @Module
-public class HomeActivityModule {
+public class MainActivityModule {
 
   @Provides
-  ViewModelProvider.Factory homeViewModelProvider(HomeViewModel viewModel) {
+  ViewModelProvider.Factory homeViewModelProvider(MainViewModel viewModel) {
     return new ViewModelProviderFactory<>(viewModel);
   }
 
   @Provides
-  HomeViewModel provideHomeViewModel(DataManager dataManager, SchedulerProvider schedulerProvider) {
-    return new HomeViewModel(dataManager, schedulerProvider);
+  MainViewModel provideHomeViewModel(DataManager dataManager, SchedulerProvider schedulerProvider) {
+    return new MainViewModel(dataManager, schedulerProvider);
   }
 
 }
